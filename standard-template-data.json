@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.0.0",
-    "generatedAt": "2026-08-27T01:07:21.662339265Z",
+    "version": "1.1.0",
+    "generatedAt": "2026-09-14T01:54:43.530966410Z",
     "templateType": "trip_e",
     "propertyId": "050792dc-5424-423a-ab4c-b1d251f44f57",
     "homepageId": "8ea241cf-6b0b-47e2-ae05-a4fa662f9400"
@@ -22,7 +22,7 @@
     "checkin": "15:00",
     "checkout": "11:00",
     "checkInOutInfo": "[입퇴실안내]\n- 입실: 15시 00분\n- 퇴실: 11시 00분\n- 입실 마감시간: 20시 00분\n22시이후 입실 시 사전 문의",
-    "usageGuide": "- 대부도 그냥,봄 펜션은 고객님의 건강하고 편안한 휴식을 위해 매주 객실 매트리스 피톤치드 소독을 진행하고 있습니다\n\n[입퇴실안내]\n- 입실: 15시 00분\n- 퇴실: 11시 00분\n- 입실 마감시간: 20시 00분\n22시이후 입실 시 사전 문의\n\n[인원추가요금]\n유아 (24개월 미만): 무료이나 인원에는 포함\n\n[개별바베큐]\n- 이용 객실: 전 객실\n- 바베큐 형태: 숯불 + 그릴 / 전기 그릴\n- 이용 요금: 숯불 25,000원 / 전기 무료(1박기준/현장결제) \n- 신청 시간: 16:00 ~ 21:00\n- 이용 시간: 17:00 ~ 22:00\n※ 동계 및 우천 시 이용 가능\n※ 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다.\n※ 숯 추가 시 10,000원\n\n[개별수영장]\n[유아 풀장]\n- 이용 요금: 무료\n- 운영 기간: 26년 7월 1일 ~ 8월 31일\n※ 현장 상황에 따라 변경될 수 있습니다.\n- 온도: 냉수\n\n[불멍]\n[기본정보]\n- 이용 장소:객실 마당\n- 제공 구성:고구마/감자 제공\n- 이용 요금:20,000원 (1박기준/현장결제)\n- 이용 시간:~22:00\n※ 동계 및 우천 시 이용 가능\n※ 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다\n\n[부대시설]\n[텃밭]\n- 유기농 야채, 쌈채소 등 드실 만큼 채취 가능합니다\n\n\n[기타 부대시설]\n- 노래방, 게임기, 해먹",
+    "usageGuide": "- 대부도 그냥,봄 펜션은 고객님의 건강하고 편안한 휴식을 위해 매주 객실 매트리스 피톤치드 소독을 진행하고 있습니다\n\n[입퇴실안내]\n- 입실: 15시 00분\n- 퇴실: 11시 00분\n- 입실 마감시간: 20시 00분\n22시이후 입실 시 사전 문의\n\n[인원추가요금]\n유아 (24개월 미만): 무료이나 인원에는 포함\n\n[개별바베큐]\n- 이용 객실: 전 객실\n- 바베큐 형태: 숯불 + 그릴 / 전기 그릴\n- 이용 요금: 숯불 30,000원 / 전기 무료(1박기준/현장결제)\n- 신청 시간: 16:00 ~ 21:00\n- 이용 시간: 17:00 ~ 22:00\n※ 동계 및 우천 시 이용 가능\n※ 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다.\n※ 숯 추가 시 10,000원\n\n[개별수영장]\n[유아 풀장]\n- 이용 요금: 무료\n- 운영 기간: 26년 7월 1일 ~ 8월 31일\n※ 현장 상황에 따라 변경될 수 있습니다.\n- 온도: 냉수\n\n[불멍]\n[기본정보]\n- 이용 장소:객실 마당\n- 제공 구성:고구마/감자 제공\n- 이용 요금:25,000원 (1박기준/현장결제)\n- 이용 시간:~22:00\n※ 동계 및 우천 시 이용 가능\n※ 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다\n\n[부대시설]\n[텃밭]\n- 유기농 야채, 쌈채소 등 드실 만큼 채취 가능합니다\n\n\n[기타 부대시설]\n- 노래방, 게임기, 해먹",
     "reservationGuide": "- 대부도 그냥,봄 펜션은 고객님의 건강하고 편안한 휴식을 위해 매주 객실 매트리스 피톤치드 소독을 진행하고 있습니다",
     "province": "도/시",
     "city": "시/군/구",
@@ -101,7 +101,7 @@
         "id": "10bbfc70-9c9b-41b8-a1d5-a06c1fbeee47",
         "name": "개별바베큐",
         "description": "",
-        "usageGuide": "- 이용 객실: 전 객실\n- 바베큐 형태: 숯불 + 그릴 / 전기 그릴\n- 이용 요금: 숯불 25,000원 / 전기 무료(1박기준/현장결제) \n- 신청 시간: 16:00 ~ 21:00\n- 이용 시간: 17:00 ~ 22:00\n※ 동계 및 우천 시 이용 가능\n※ 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다.\n※ 숯 추가 시 10,000원",
+        "usageGuide": "- 이용 객실: 전 객실\n- 바베큐 형태: 숯불 + 그릴 / 전기 그릴\n- 이용 요금: 숯불 30,000원 / 전기 무료(1박기준/현장결제)\n- 신청 시간: 16:00 ~ 21:00\n- 이용 시간: 17:00 ~ 22:00\n※ 동계 및 우천 시 이용 가능\n※ 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다.\n※ 숯 추가 시 10,000원",
         "displayOrder": 2,
         "images": [
           {
@@ -142,7 +142,7 @@
         "id": "5fca1681-ffa5-429c-bc46-c56ca6a19007",
         "name": "불멍",
         "description": "",
-        "usageGuide": "[기본정보]\n- 이용 장소:객실 마당\n- 제공 구성:고구마/감자 제공\n- 이용 요금:20,000원 (1박기준/현장결제)\n- 이용 시간:~22:00\n※ 동계 및 우천 시 이용 가능\n※ 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다",
+        "usageGuide": "[기본정보]\n- 이용 장소:객실 마당\n- 제공 구성:고구마/감자 제공\n- 이용 요금:25,000원 (1박기준/현장결제)\n- 이용 시간:~22:00\n※ 동계 및 우천 시 이용 가능\n※ 날씨나 상황에 따라 이용이 제한될 수 있으니 사전 확인 바랍니다",
         "displayOrder": 3,
         "images": [
           {
@@ -304,16 +304,16 @@
         ],
         "exterior": [
           {
-            "id": "938089fe-d246-4bea-bb4d-2b90d0c07d5d",
-            "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/06/05/nZYUGmICf1zw.jpg",
+            "id": "804b99a7-c9b5-4140-b991-4eedbac88de4",
+            "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/06/A0d87wlGHXVD.jpg",
             "sortOrder": 0,
             "description": "",
             "isSelected": true,
             "blockId": null
           },
           {
-            "id": "804b99a7-c9b5-4140-b991-4eedbac88de4",
-            "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/01/06/A0d87wlGHXVD.jpg",
+            "id": "938089fe-d246-4bea-bb4d-2b90d0c07d5d",
+            "url": "https://bookingplay-media.s3.amazonaws.com/item_images/2026/06/05/nZYUGmICf1zw.jpg",
             "sortOrder": 1,
             "description": "",
             "isSelected": true,
@@ -385,12 +385,12 @@
     {
       "id": "debdcedf-cda8-43ea-9b1c-3ad6697d5be6",
       "name": "봄 독채",
-      "description": "독채형, 거실1+침대룸(퀸침대1)+침대룸(퀸침대1)+침대룸(퀸침대1)+주방1+화장실2\n산전망, 30.00평\n욕실용품,남녀공용,TV,금연,냉장고,에어컨,전기밥솥,취사시설/도구,OTT,가스레인지,드라이기,노래방,바디워시,린스,샴푸,식탁,와이파이,인덕션,전자레인지,정수기,커피포트,타월,일산화탄소 감지기,무선인터넷",
+      "description": "독채형, 거실1+침대룸(퀸침대1)+침대룸(퀸침대1)+침대룸(퀸침대1)+주방1+화장실2\r\n산전망, 30.00평\r\n욕실용품,남녀공용,TV,금연,냉장고,에어컨,전기밥솥,취사시설/도구,OTT,가스레인지,드라이기,노래방,바디워시,린스,샴푸,식탁,와이파이,인덕션,전자레인지,정수기,커피포트,타월,일산화탄소 감지기,무선인터넷",
       "roomInfo": "",
       "usageGuide": "독채형 : 거실1+침대룸2(퀸침대2)+복층1(퀸침대1)+주방1+화장실2+개별바베큐\r\n\r\n[인원추가(1박기준/현장결제)]\r\n성인(19세 이상): 1인 20,000원\r\n아동(24개월 이상 ~ 18세 이상): 1인 20,000원\r\n유아 (24개월 미만): 무료이나 인원에는 포함",
       "group": null,
       "size": 99.17,
-      "baseOccupancy": 6,
+      "baseOccupancy": 4,
       "maxOccupancy": 12,
       "totalRoomCount": {
         "bedroom": 3,
@@ -494,7 +494,7 @@
         {
           "thumbnail": [
             {
-              "id": "9dbe5387-9388-44fe-84fb-c3fb490ffca9",
+              "id": "ea70ccbe-b6b5-4ebd-b863-07d5141d4d26",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/sOAl2ebmoVGZ.jpg",
               "sortOrder": 1,
               "description": "",
@@ -504,7 +504,7 @@
           ],
           "interior": [
             {
-              "id": "c0a205e0-109f-4c0e-8cdf-c9f5d6f6a4c1",
+              "id": "7c1c523d-89a2-4bb8-b2b2-4ee143c8f17d",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/1cnOENHLv3FK.jpg",
               "sortOrder": 2,
               "description": "",
@@ -512,7 +512,7 @@
               "blockId": null
             },
             {
-              "id": "e1bc013c-c840-4f67-bc69-1a68f7823889",
+              "id": "fd5248de-eba9-4e36-83d0-bec13c7bb4ca",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/B9s3bYHOArkN.jpg",
               "sortOrder": 3,
               "description": "",
@@ -520,7 +520,7 @@
               "blockId": null
             },
             {
-              "id": "658aadc6-df32-444e-9e2a-1fb0eea7170a",
+              "id": "d14ddf36-d968-4f80-acf0-a9c25ccaaaaf",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/5afGbPRNpSKX.jpg",
               "sortOrder": 4,
               "description": "",
@@ -528,7 +528,7 @@
               "blockId": null
             },
             {
-              "id": "1a048979-aa6b-4565-917b-a4deb45cf7e8",
+              "id": "d668f5c3-0cb6-4d9f-984c-e0b18a2361b2",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/WtTV0fFZH5zN.jpg",
               "sortOrder": 5,
               "description": "",
@@ -536,7 +536,7 @@
               "blockId": null
             },
             {
-              "id": "dfe13632-ae66-424a-8d82-97ed0f427ee6",
+              "id": "4e7704c9-6210-45a7-96a1-d4ec0c1f0a74",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/DA4syPq6IC9v.jpg",
               "sortOrder": 6,
               "description": "",
@@ -544,7 +544,7 @@
               "blockId": null
             },
             {
-              "id": "48f95bf3-f758-41d2-bb45-3f63baca3fb6",
+              "id": "c530974c-76f2-4a43-97bc-e8c0be0510a9",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/Vie2CFEMtpxA.jpg",
               "sortOrder": 7,
               "description": "",
@@ -552,7 +552,7 @@
               "blockId": null
             },
             {
-              "id": "3866cd81-f2c8-4039-9525-f73702b9e82e",
+              "id": "38ad5cd6-bb50-4edd-b5c7-014aab9b7fb4",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/0WEAKfmns4HT.jpg",
               "sortOrder": 8,
               "description": "",
@@ -560,7 +560,7 @@
               "blockId": null
             },
             {
-              "id": "5b3f84d1-93c7-4186-af43-64bc427da632",
+              "id": "079e3b00-ce3e-4289-9542-07ddb3cb3835",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/NXlYJpG9E0nv.jpg",
               "sortOrder": 9,
               "description": "",
@@ -568,7 +568,7 @@
               "blockId": null
             },
             {
-              "id": "2010c036-8dce-4c17-832b-8c2f941087c9",
+              "id": "e92b99a4-ba4b-4998-9353-2e532d1703c7",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/A01stpEMo9Wa.jpg",
               "sortOrder": 10,
               "description": "",
@@ -576,7 +576,7 @@
               "blockId": null
             },
             {
-              "id": "daae447d-903a-4050-a474-208dc76dca28",
+              "id": "01e45273-43b0-4416-aab2-59a0e109d637",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/UKeXzpthAb8D.jpg",
               "sortOrder": 11,
               "description": "",
@@ -584,7 +584,7 @@
               "blockId": null
             },
             {
-              "id": "0afaba0f-bb4c-46e3-aa74-b79af9f428a2",
+              "id": "e03c7309-7640-41f4-b905-feadf603641d",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/cgO9KdF5RsjY.jpg",
               "sortOrder": 12,
               "description": "",
@@ -592,7 +592,7 @@
               "blockId": null
             },
             {
-              "id": "1cd1d78b-2130-40ec-8e6c-19c4f25319d8",
+              "id": "01798a4e-ebf1-4d59-8f36-70dc34e87d05",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/4dk8576YT93j.jpg",
               "sortOrder": 13,
               "description": "",
@@ -600,7 +600,7 @@
               "blockId": null
             },
             {
-              "id": "21e1e7af-65e3-4ce6-aab3-82676d9eb9dd",
+              "id": "8f55c2e0-b9fe-4426-b13a-25656e523296",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/OYI17wiL0Vbx.jpg",
               "sortOrder": 14,
               "description": "",
@@ -608,7 +608,7 @@
               "blockId": null
             },
             {
-              "id": "f4bdaa01-4f9b-46e7-a9c9-53b439e35a53",
+              "id": "9c477ef7-eff5-4329-9ac2-6d9ae3a6dc9b",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/oLKmaMyA4h29.jpg",
               "sortOrder": 15,
               "description": "",
@@ -616,7 +616,7 @@
               "blockId": null
             },
             {
-              "id": "20d6490d-b965-4b2d-bb43-380197725a02",
+              "id": "e37bfc23-0139-4521-9b71-7bab3b269f85",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/Dw0L492vUBoc.jpg",
               "sortOrder": 16,
               "description": "",
@@ -624,7 +624,7 @@
               "blockId": null
             },
             {
-              "id": "63867112-7194-4a42-bffc-f448b2d0cfa2",
+              "id": "c3d2be19-c693-4403-b30f-5c7a343fcb05",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/3296W51oSj8m.jpg",
               "sortOrder": 17,
               "description": "",
@@ -632,7 +632,7 @@
               "blockId": null
             },
             {
-              "id": "c4ee703d-c9ee-4e36-b25f-bb71b7c4ecf1",
+              "id": "f6f84cd5-ba0d-4c0b-9876-9d05dffd0917",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/eKOSrpnmYJgk.jpg",
               "sortOrder": 18,
               "description": "",
@@ -640,7 +640,7 @@
               "blockId": null
             },
             {
-              "id": "cc7dd7ff-e348-4108-b405-97eb644c8633",
+              "id": "1271dae7-b30c-4d06-b0d5-79126b520299",
               "url": "https://bookingplay-media.s3.amazonaws.com/room_images/2025/12/26/NUi32sFMYXEq.jpg",
               "sortOrder": 19,
               "description": "",
