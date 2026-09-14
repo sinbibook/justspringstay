@@ -133,6 +133,15 @@
     return rooms.filter(function (r) { return r.id === roomtype.id; })[0] || null;
   };
 
+  // roomtype 표시용 객실명: roomtypes[i].name → 매칭 rooms[j].name 폴백
+  // (관리자에서 객실명을 비워두면 메뉴/네비에서 항목이 통째로 사라지던 문제 대응)
+  BaseDataMapper.prototype.getRoomtypeName = function (rt) {
+    var own = String((rt && rt.name) || '').trim();
+    if (own) return own;
+    var matched = this.getMatchedRoom(rt);
+    return String((matched && matched.name) || '').trim();
+  };
+
   // roomtype 대표 썸네일 URL: roomtype_thumbnail → roomtype_interior → 그 외 (isSelected, sortOrder순 첫 이미지)
   BaseDataMapper.prototype.getRoomtypeThumbnailUrl = function (rt) {
     var imgs = (rt && rt.images) || [];
@@ -142,6 +151,41 @@
     };
     var img = pick('roomtype_thumbnail') || pick('roomtype_interior') || this.getSelectedImages(imgs)[0];
     return img && img.url ? img.url : null;
+  };
+
+  BaseDataMapper.prototype.getRoomGroupName = function (roomtype) {
+    return String((roomtype && (roomtype.groupname || roomtype.groupName || roomtype.group_name)) || '').trim();
+  };
+  BaseDataMapper.prototype.hasRoomGroups = function (roomtypes) {
+    return (roomtypes || []).some(function (rt) { return !!String((rt && (rt.groupname || rt.groupName || rt.group_name)) || '').trim(); });
+  };
+  BaseDataMapper.prototype.getRoomMenuItems = function (roomtypes, resolveName) {
+    var self = this;
+    var list = roomtypes || [];
+    if (!this.hasRoomGroups(list)) {
+      return list.map(function (rt) { return { label: resolveName ? resolveName(rt) : self.getRoomtypeName(rt), roomtype: rt, roomtypes: [rt] }; });
+    }
+    var seen = {};
+    var items = [];
+    list.forEach(function (rt) {
+      var groupName = self.getRoomGroupName(rt);
+      var label = groupName || (resolveName ? resolveName(rt) : self.getRoomtypeName(rt));
+      if (!String(label).trim()) return;
+      var key = groupName ? 'group:' + groupName : 'room:' + rt.id;
+      if (!seen[key]) { seen[key] = { label: label, groupName: groupName, roomtype: rt, roomtypes: [rt] }; items.push(seen[key]); }
+      else { seen[key].roomtypes.push(rt); }
+    });
+    return items;
+  };
+  BaseDataMapper.prototype.getRoomMenuLabel = function (item) { return (item && item.label) || ''; };
+  BaseDataMapper.prototype.getRoomMenuRoomtype = function (item) { return (item && item.roomtype) || item; };
+  BaseDataMapper.prototype.getRoomMenuLink = function (item, paramName) {
+    var roomtype = this.getRoomMenuRoomtype(item);
+    return 'room.html?' + (paramName || 'room_id') + '=' + encodeURIComponent(roomtype && roomtype.id);
+  };
+  BaseDataMapper.prototype.isRoomMenuItemActive = function (item, currentId) {
+    if (!item || !currentId) return false;
+    return (item.roomtypes || []).some(function (rt) { return String(rt && rt.id) === String(currentId); });
   };
 
   BaseDataMapper.prototype.toPhoneList = function (value) {

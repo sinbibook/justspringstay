@@ -16,8 +16,21 @@
     this.mapFacilityMenu();
     this.mapFooterMenu();
     this.mapTravelMenu();
+    this.mapLayoutMapMenu();
     this.mapHeaderNavHover();
     this.mapFooter();
+  };
+
+  // MAPPER: layoutMap.enabled === false 이면 ROOMS 서브메뉴의 `미리보기` 숨김
+  // (헤더 PC + 모바일 aside). 기존에는 mapFooterMenu 가 ROOMS 대메뉴의 href 만
+  // 바꾸고 서브메뉴 항목은 그대로 둬서, 꺼진 페이지에 눌러 들어갈 수 있었다.
+  HeaderFooterMapper.prototype.mapLayoutMapMenu = function () {
+    var pages = this.getPages();
+    var lm = pages.layoutMap && pages.layoutMap.sections && pages.layoutMap.sections[0];
+    var hide = !!(lm && lm.enabled === false);
+    document.querySelectorAll('[data-layout-map-menu]').forEach(function (el) {
+      el.style.display = hide ? 'none' : '';
+    });
   };
 
   // MAPPER: nearbyAttractions.enabled === false 이면 TRAVEL/주변여행지 메뉴 숨김 (헤더 PC·모바일 + 푸터)
@@ -44,12 +57,13 @@
       } else {
         var self = this;
         var firstActive = this.getRoomtypes().filter(function (rt) {
-          return rt.name && rt.name.trim();
+          return !!self.getRoomtypeName(rt);
         }).find(function (rt) {
           var m = self.getMatchedRoom(rt);
           return m && m.status === 'active';
         });
-        roomsLink.href = firstActive ? ('room.html?id=' + firstActive.id) : 'room.html';
+        var firstItem = this.getRoomMenuItems(firstActive ? [firstActive] : [])[0];
+        roomsLink.href = firstItem ? this.getRoomMenuLink(firstItem, 'id') : 'room.html';
       }
     }
 
@@ -159,27 +173,28 @@
 
   // MAPPER: roomtypes[].name → ROOMS 메뉴 동적 생성 (미리보기 다음에)
   HeaderFooterMapper.prototype.mapRoomMenu = function () {
+    var self = this;
     var roomtypes = this.getRoomtypes();
-    // PC + 모바일 ROOMS 서브메뉴 둘 다 동적 생성 ("미리보기" 다음에 객실들 append)
+    var roomItems = this.getRoomMenuItems(roomtypes);
     var containers = document.querySelectorAll('[data-rooms-submenu], [data-rooms-submenu-mobile]');
     if (!containers.length) return;
 
     containers.forEach(function (container) {
       clearMapped(container);
-      roomtypes.forEach(function (rt) {
-        if (!rt.name || !rt.name.trim()) return;
+      roomItems.forEach(function (item) {
+        var name = self.getRoomMenuLabel(item);
+        if (!String(name).trim()) return;
         var li = document.createElement('li');
         li.setAttribute('data-mapped', '');
         var a = document.createElement('a');
-        a.href = 'room.html?id=' + rt.id;
-        a.textContent = rt.name;
+        a.href = self.getRoomMenuLink(item, 'id');
+        a.textContent = name;
         li.appendChild(a);
         container.appendChild(li);
       });
     });
   };
 
-  // MAPPER: property.facilities[].name → SPECIAL 메뉴 동적 생성
   HeaderFooterMapper.prototype.mapFacilityMenu = function () {
     var facilities = this.getProperty().facilities || [];
     var container = document.querySelector('[data-facility-submenu]');
@@ -256,11 +271,26 @@
       sloganEl.textContent = '지금 바로 ' + propertyName + particle + ' 함께해 보세요.';
     }
 
-    // 업체 전화번호
-    var phone = this.toPhoneList(prop.contactPhone)[0];
+    // 업체 전화번호 (배열이면 전부 한 줄씩 노출)
+    var phones = this.toPhoneList(prop.contactPhone);
     var phoneEl = document.querySelector('[data-footer-phone]');
     if (phoneEl) {
-      phoneEl.textContent = phone;
+      phoneEl.textContent = '';
+      // 고정 높이 footer가 넘치지 않도록 번호 2개 이상일 때만 상단 여백 축소
+      var footerEl = document.querySelector('#sh_ft');
+      if (footerEl) {
+        if (phones.length > 1) {
+          footerEl.classList.add('has-multi-phone');
+        } else {
+          footerEl.classList.remove('has-multi-phone');
+        }
+      }
+      phones.forEach(function (p) {
+        var item = document.createElement('span');
+        item.className = 'phoneItem';
+        item.textContent = p;
+        phoneEl.appendChild(item);
+      });
     }
 
     // 사업자 정보 (주소 / 사업자번호 / 대표자 — 줄바꿈 유지, 링크·pop은 형제이므로 건드리지 않음)
