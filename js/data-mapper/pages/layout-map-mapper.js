@@ -47,14 +47,19 @@
       ul.appendChild(pli);
     }
 
-    roomtypes.forEach(function (rt) {
-      if (!rt.name || !rt.name.trim()) return;
+    var activeRoomtypes = roomtypes.filter(function (rt) {
+      if (!self.getRoomtypeName(rt)) return false;
       var matched = self.getMatchedRoom(rt);
-      if (!matched || matched.status !== 'active') return;
+      return matched && matched.status === 'active';
+    });
+    var roomItems = this.getRoomMenuItems(activeRoomtypes);
+    roomItems.forEach(function (item) {
+      var rt = self.getRoomMenuRoomtype(item);
+      var roomLabel = self.getRoomMenuLabel(item);
       var li = document.createElement('li');
       var link = document.createElement('a');
-      link.href = 'room.html?id=' + rt.id;
-      link.textContent = rt.name;
+      link.href = self.getRoomMenuLink(item, 'id');
+      link.textContent = roomLabel;
       li.appendChild(link);
       ul.appendChild(li);
     });
@@ -217,10 +222,17 @@
       return;
     }
 
-    roomtypes.forEach(function (rt) {
-      if (!rt.name || !rt.name.trim()) return;
+    var activeRoomtypes = roomtypes.filter(function (rt) {
+      if (!self.getRoomtypeName(rt)) return false;
       var matched = self.getMatchedRoom(rt);
-      if (matched && matched.status === 'inactive') return;
+      return !(matched && matched.status === 'inactive');
+    });
+    var roomItems = this.getRoomMenuItems(activeRoomtypes);
+    roomItems.forEach(function (item) {
+      var rt = self.getRoomMenuRoomtype(item);
+      var roomLabel = self.getRoomMenuLabel(item);
+      if (!rt || !String(roomLabel).trim()) return;
+      var matched = self.getMatchedRoom(rt);
 
       // 썸네일 이미지: roomtype 대표 이미지 (roomtype_thumbnail → interior 폴백)
       var thumbnailUrl = self.getRoomtypeThumbnailUrl(rt);
@@ -230,7 +242,7 @@
 
       var link = document.createElement('a');
       link.className = 'link';
-      link.href = 'room.html?room_id=' + rt.id;
+      link.href = self.getRoomMenuLink(item);
 
       var imgDiv = document.createElement('div');
       imgDiv.className = 'img';
@@ -254,7 +266,7 @@
 
       var nameP = document.createElement('p');
       nameP.className = 'name';
-      nameP.textContent = rt.name || '';
+      nameP.textContent = roomLabel;
 
       var ul = document.createElement('ul');
       var li = document.createElement('li');
@@ -266,7 +278,7 @@
 
       var roomBtn = document.createElement('a');
       roomBtn.className = 'room_btn';
-      roomBtn.href = 'room.html?room_id=' + rt.id;
+      roomBtn.href = self.getRoomMenuLink(item);
       roomBtn.innerHTML = '(<span>Learn More</span>)';
 
       infoDiv.appendChild(nameP);
@@ -281,20 +293,9 @@
     });
 
     // Room Swiper 초기화 (DOM 업데이트 후)
+    // 슬라이드가 1개면 setupRoomSlider 가 Swiper 없이 정적 카드로 노출한다.
     setTimeout(function () {
-      if (window.roomSwiper) window.roomSwiper.destroy();
-      window.roomSwiper = createSwiper('.room_slider', {
-        loop: true,
-        effect: 'fade',
-        speed: 2000,
-        spaceBetween: 0,
-        slideActiveClass: 'on',
-        autoplay: { delay: 2500, disableOnInteraction: false },
-        navigation: {
-          nextEl: '#roomList .arr.next',
-          prevEl: '#roomList .arr.prev',
-        },
-      });
+      if (window.setupRoomSlider) window.setupRoomSlider();
     }, 50);
   };
 
