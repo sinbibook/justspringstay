@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.4.0",
-    "generatedAt": "2026-10-09T08:07:55.494416723Z",
+    "version": "1.5.0",
+    "generatedAt": "2026-10-09T08:08:14.175321796Z",
     "templateType": "trip_e",
     "propertyId": "050792dc-5424-423a-ab4c-b1d251f44f57",
     "homepageId": "8ea241cf-6b0b-47e2-ae05-a4fa662f9400"
@@ -29,6 +29,9 @@
     "domain": "justspringstay.kr",
     "realtimeBookingId": "https://www.bookingplay.co.kr/booking/1/10291",
     "ybsId": "79092",
+    "tripPropertyId": "10291",
+    "partnerType": "distributor_b",
+    "tripProviderName": "트립일레븐",
     "amenities": [
       "흡연구역(지정장소)",
       "주차장"
@@ -379,10 +382,7 @@
         "surrounding": [ ],
         "commonArea": [ ]
       }
-    ],
-    "tripPropertyId": "10291",
-    "partnerType": "distributor_b",
-    "tripProviderName": "트립일레븐"
+    ]
   },
   "rooms": [
     {
@@ -1169,9 +1169,9 @@
       },
       "theme": {
         "font": {
+          "koMain": null,
           "koSub": null,
-          "enMain": null,
-          "koMain": null
+          "enMain": null
         },
         "color": null
       },
