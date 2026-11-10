@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.7.0",
-    "generatedAt": "2026-11-10T08:24:01.736256967Z",
+    "version": "1.8.0",
+    "generatedAt": "2026-11-10T08:24:37.697957795Z",
     "templateType": "trip_e",
     "propertyId": "050792dc-5424-423a-ab4c-b1d251f44f57",
     "homepageId": "8ea241cf-6b0b-47e2-ae05-a4fa662f9400"
@@ -1215,8 +1215,8 @@
             "category": "property_exterior"
           },
           {
-            "id": "ca5794f6-11a0-4853-b031-2f060b1bf2ee",
-            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/property_exterior/1787624393369-bsfddkgqs9.jpg",
+            "id": "01a1c48f-1bc4-7df5-bc96-18bea8f97b95",
+            "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/property_exterior/1794299075005-r3qo2kwj91.jpg",
             "sortOrder": 2,
             "description": "",
             "isSelected": true,
