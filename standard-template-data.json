@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.12.0",
-    "generatedAt": "2026-11-10T08:38:14.690965911Z",
+    "version": "1.13.0",
+    "generatedAt": "2026-11-10T08:38:53.965035420Z",
     "templateType": "trip_e",
     "propertyId": "050792dc-5424-423a-ab4c-b1d251f44f57",
     "homepageId": "8ea241cf-6b0b-47e2-ae05-a4fa662f9400"
@@ -908,17 +908,9 @@
                 "title": "",
                 "images": [
                   {
-                    "id": "9fdaf3ab-689e-43e2-9ccf-eb178107f629",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/main_hero/1787624391235-4s3zr4nk79.jpg",
-                    "sortOrder": 0,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
                     "id": "5314fece-c0cb-47cf-9e5c-23d4df16e4a4",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/main_hero/1787624391256-20vy583fzr.jpg",
-                    "sortOrder": 1,
+                    "sortOrder": 0,
                     "description": "",
                     "isSelected": true,
                     "blockId": null
@@ -926,6 +918,14 @@
                   {
                     "id": "e3819797-9a96-4b1c-877e-2276e92b485c",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/main_hero/1787624391340-oz7xt30fpk.jpg",
+                    "sortOrder": 1,
+                    "description": "",
+                    "isSelected": true,
+                    "blockId": null
+                  },
+                  {
+                    "id": "01a1c49c-2a4b-7413-ae49-9b7f6e15d9c7",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/main_hero/1794299930941-4rcub2hqb2.jpg",
                     "sortOrder": 2,
                     "description": "",
                     "isSelected": true,
