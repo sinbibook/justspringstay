@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.11.0",
-    "generatedAt": "2026-11-10T08:37:18.727064699Z",
+    "version": "1.12.0",
+    "generatedAt": "2026-11-10T08:38:14.690965911Z",
     "templateType": "trip_e",
     "propertyId": "050792dc-5424-423a-ab4c-b1d251f44f57",
     "homepageId": "8ea241cf-6b0b-47e2-ae05-a4fa662f9400"
@@ -777,8 +777,8 @@
                     "blockId": null
                   },
                   {
-                    "id": "4bd15312-6b4d-417b-929c-7b73e104df40",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/index_hero/1787624390450-q1z2s7808i.jpg",
+                    "id": "01a1c49b-8fae-784b-acbd-ed35b59d65c5",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/index_hero/1794299891226-gsc0d55gkr.jpg",
                     "sortOrder": 7,
                     "description": "",
                     "isSelected": true,
@@ -825,10 +825,10 @@
                 "title": "",
                 "images": [
                   {
-                    "id": "c6bcc459-ebdf-4ead-aa73-a48e51766c60",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/index_essence/1787624390744-ue203h8hjv.jpg",
+                    "id": "01a1c49b-8f5d-7339-836c-a42b3e083071",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/index_essence/1794299891234-n7tkxaemfp.jpg",
                     "sortOrder": 0,
-                    "description": "온전히 프라이빗한 휴식의 공간",
+                    "description": "",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -853,14 +853,6 @@
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/index_essence/1787624391039-aq3pzh0306.jpg",
                     "sortOrder": 3,
                     "description": "하루의 시간 속, 작은 즐거움",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
-                    "id": "a638439d-58a2-4544-b41e-31f4a93fa320",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/8ea241cf-6b0b-47e2-ae05-a4fa662f9400/index_essence/1787624391042-5k35gz4ts2.jpg",
-                    "sortOrder": 4,
-                    "description": "대부도 그냥,봄만의 편안함을 더하는 공간",
                     "isSelected": true,
                     "blockId": null
                   }
